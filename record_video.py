@@ -1,3 +1,5 @@
+# UNUSED SCRIPT. KEPT FOR REFERENCE.
+
 import cv2
 import datetime
 from datetime import datetime
