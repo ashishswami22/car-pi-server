@@ -5,4 +5,5 @@ from rest_framework import serializers
 class OBDRecordSerializer(serializers.ModelSerializer):
     class Meta:
         model = OBDRecord
+        fields = '__all__'
 
