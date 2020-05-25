@@ -1,0 +1,58 @@
+<div class="main-container">
+  <div class="content-container">
+      <div class="content-area">
+
+        <div class="clr-row">
+          <div class="clr-col-lg-4 clr-col-md-6 clr-col-sm-12">
+              <div class="card">
+                <div class="card-header" style="text-align: center;">
+                  speedometer
+                </div>
+                  <div class="card-block">
+                      <div class="card-text">
+                        <app-speedometer [speed]="data.speed_kmph" [rpm]="data.rpm" [throttlePercent]="data.throttle_percent"></app-speedometer>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="clr-col-lg-4 clr-col-md-6 clr-col-sm-12">
+            <div class="card">
+              <div class="card-header" style="text-align: center;">
+                engine
+              </div>
+                <div class="card-block">
+                    <div class="card-text">
+                      <app-engineinfo
+                        [fuelType]="data.fuel_type"
+                        [fuelPercent]="data.fuel_level_percent"
+                        [runtimeSeconds]="data.run_time_seconds"
+                        [loadPercent]="data.engine_load_percent"
+                        [oilTemperature]="data.engine_oil_temp_celcius"
+                        [coolantTemperature]="data.coolant_temp_celcius"
+                      ></app-engineinfo>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="clr-col-lg-4 clr-col-md-6 clr-col-sm-12">
+          <div class="card">
+            <div class="card-header" style="text-align: center;">
+              ambiance
+            </div>
+              <div class="card-block">
+                  <div class="card-text">
+                    <app-ambiance [ambianceTemperature]="data.ambiant_air_temp_celcius"></app-ambiance>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      </div>
+
+
+
+      </div>
+  </div>
+</div>

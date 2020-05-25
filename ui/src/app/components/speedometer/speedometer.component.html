@@ -1,0 +1,26 @@
+
+<br/>
+
+<div class="value" [ngClass]="{average: (speed > 10 && speed <= 40), fast: (speed > 40 && speed <= 80), superfast: (speed > 80)}">
+    {{speed}}
+</div>
+KMPH
+
+<br/>
+<br/>
+
+<div class="value" [ngClass]="{average: (rpm > 1500 && rpm <= 4000), fast: (rpm > 4000 && rpm <= 6000), superfast: (rpm > 6000)}">
+    {{rpm/1000}}
+</div>
+K RPM
+
+<br/>
+<br/>
+
+<div class="value" [ngClass]="{average: (throttlePercent > 20 && rpm <= 50), fast: (throttlePercent > 50 && rpm <= 75), superfast: (throttlePercent > 75)}">
+    {{throttlePercent}}
+</div>
+% throttled
+
+<br/>
+<br/>

@@ -1,0 +1,48 @@
+
+<br/>
+<div class="value" [ngClass]="{critical: (fuelPercent <= 30), average: (fuelPercent > 30 && fuelPercent <= 70), full: (fuelPercent > 70)}">
+    {{fuelPercent.toFixed(0)}}
+</div>
+% 
+{{fuelType?.toLowerCase()}} remaining
+
+
+<br/>
+<br/>
+
+<div class="value" [ngClass]="{full: (loadPercent <= 75), average: (loadPercent > 75 && fuelPercent <= 90), critical: (loadPercent > 90)}">
+    {{loadPercent.toFixed(0)}}
+</div>
+% 
+utilized
+
+
+<br/>
+<br/>
+<div class="value" [ngClass]="{cool: (oilTemperature <= 25), normal: (oilTemperature > 25 && oilTemperature <= 29), hot: (oilTemperature > 29)}">
+    {{oilTemperature}}
+</div>
+&#8451; [ oil ]
+
+<br/>
+<br/>
+
+<div class="value" [ngClass]="{cool: (coolantTemperature <= 25), normal: (coolantTemperature > 25 && coolantTemperature <= 29), hot: (coolantTemperature > 29)}">
+    {{coolantTemperature}}
+</div>
+&#8451; [ coolant ]
+
+<br/>
+<br/>
+
+<div class="value">
+    {{runtimeSeconds > 3600 ? (runtimeSeconds/3600).toFixed(0) : (runtimeSeconds/60).toFixed(0)}}
+</div>
+{{runtimeSeconds > 3600 ? 'hours' : 'minutes'}}
+since engine started
+
+<br/>
+<br/>
+
+
+

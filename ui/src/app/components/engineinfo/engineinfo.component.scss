@@ -1,0 +1,28 @@
+:host() {
+    font-size: 16px;
+    font-weight: bold;
+}
+div {
+    padding-right: 0px;
+}
+div.value {
+    font-size: 50px;
+    font-weight: bold;
+    vertical-align: baseline;
+    display: inline-block;
+    min-width: 200px;
+    text-align: right;
+    &.critical {
+        color: #EE2222;
+    }
+    &.average {
+        color: #FF8923;
+    }
+    &.full {
+        color: #22AA22;
+    }
+    & sup {
+        font-size: 16px;
+        margin-top: -50px;
+    }
+}

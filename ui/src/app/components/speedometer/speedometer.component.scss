@@ -1,0 +1,24 @@
+:host() {
+    font-size: 16px;
+    font-weight: bold;
+}
+div {
+    padding-right: 0px;
+}
+div.value {
+    font-size: 50px;
+    font-weight: bold;
+    vertical-align: baseline;
+    display: inline-block;
+    min-width: 200px;
+    text-align: right;
+    &.average {
+        color: #FF8923;
+    }
+    &.fast {
+        color: #22AA22;
+    }
+    &.superfast {
+        color: #EE2222;
+    }
+}
